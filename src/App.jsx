@@ -1,16 +1,16 @@
 import './App.css';
-// import Prva from './components/PrvaKompa';
-// import { default as Cetvrta, DrugaKompa as Druga, TrecaKompa} from './components/DrugaKompa';
-import { PrvaKompa as Prva, DrugaKompa as Druga, TrecaKompa, CetvrtaKompa as Cetvrta, NekaKompa } from './components';
+import PrvaKompa from './components/PrvaKompa';
+import DrugaKompa from './components/DrugaKompa';
+import * as OstaleKompe from './components/OstaleKompe';
+
 function App() {
   return (
     <div className="App">
       <h1>Algebra</h1>
-      <Prva />
-      <Druga />
-      <TrecaKompa />
-      <Cetvrta />
-      <NekaKompa />
+      <PrvaKompa />
+      <DrugaKompa />
+      <OstaleKompe.TrecaKompa />
+      <OstaleKompe.CetvrtaKompa />
     </div>
   );
 }
